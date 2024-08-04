@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="quiz-container">
+        <h1>Quiz</h1>
+        <div id="question-container">
+            <div id="question1" class="question active">
+                <p>1. Which HTML element is used to define the title of a document?</p>
+                <button class="opt" onclick="Incorrect(this)">A. meta</button><br>
+                <button class="opt" onclick="Incorrect(this)">B. head</button><br>
+                <button class="opt" onclick="Correct(this)">C. title</button><br>
+                <button class="opt" onclick="Incorrect(this)">D. header</button>
+            </div>
+            <div id="question2" class="question">
+                <p>2. What is the correct HTML element for inserting a line break?</p>
+                <button class="opt" onclick="Correct(this)">A. br</button><br>
+                <button class="opt" onclick="Incorrect(this)">B. lb</button><br>
+                <button class="opt" onclick="Incorrect(this)">C. break</button><br>
+                <button class="opt" onclick="Incorrect(this)">D. line</button>
+            </div>
+            <div id="question3" class="question">
+                <p>3. Which attribute is used to specify an alternate text for an image, if the image cannot be displayed?</p>
+                <button class="opt" onclick="Correct(this)">A. alt</button><br>
+                <button class="opt" onclick="Incorrect(this)">B. title</button><br>
+                <button class="opt" onclick="Incorrect(this)">C. src</button><br>
+                <button class="opt" onclick="Incorrect(this)">D. href</button>
+            </div>
+            <div id="question4" class="question">
+                <p>4. What is the correct HTML element for the largest heading?</p>
+                <button class="opt" onclick="Correct(this)">A. h1</button><br>
+                <button class="opt" onclick="Incorrect(this)">B. h6</button><br>
+                <button class="opt" onclick="Incorrect(this)">C. heading</button><br>
+                <button class="opt" onclick="Incorrect(this)">D. head</button>
+            </div>
+            <div id="question5" class="question">
+                <p>5. Which HTML element is used to create a hyperlink?</p>
+                <button class="opt" onclick="Incorrect(this)">A. link</button><br>
+                <button class="opt" onclick="Correct(this)">B. a</button><br>
+                <button class="opt" onclick="Incorrect(this)">C. href</button><br>
+                <button class="opt" onclick="Incorrect(this)">D. hyperlink</button>
+            </div>
+            <div id="question6" class="question">
+                <p>6. Which property is used to change the background color of an element?</p>
+                <button class="opt" onclick="Incorrect(this)">A. color</button><br>
+                <button class="opt" onclick="Inorrect(this)">B. bgcolor</button><br>
+                <button class="opt" onclick="Correct(this)">C. background-color</button><br>
+                <button class="opt" onclick="Incorrect(this)">D. background</button>
+            </div>
+            <div id="question7" class="question">
+                <p>7. Which CSS property is used to change the text color of an element?</p>
+                <button class="opt" onclick="Incorrect(this)">A. text-color</button><br>
+                <button class="opt" onclick="Correct(this)">B. color</button><br>
+                <button class="opt" onclick="Incorrect(this)">C. font-color</button><br>
+                <button class="opt" onclick="Incorrect(this)">D. fgcolor</button>
+            </div>
+            <div id="question8" class="question">
+                <p>8. Which CSS property controls the text size?</p>
+                <button class="opt" onclick="Incorrect(this)">A. font-style</button><br>
+                <button class="opt" onclick="Incorrect(this)">B. text-size</button><br>
+                <button class="opt" onclick="Correct(this)">C. font-size</button><br>
+                <button class="opt" onclick="Incorrect(this)">D. text-style</button>
+            </div>
+            <div id="question9" class="question">
+                <p>9. How do you add a background color for all 'h1' elements?</p>
+                <button class="opt" onclick="Correct(this)">A. h1 {background-color:#FFFFFF;}</button><br>
+                <button class="opt" onclick="Incorrect(this)">B. h1.all {background-color:#FFFFFF;}</button><br>
+                <button class="opt" onclick="Incorrect(this)">C. all.h1 {background-color:#FFFFFF;}</button><br>
+                <button class="opt" onclick="Incorrect(this)">D. h1::all {background-color:#FFFFFF;}</button>
+            </div>
+            <div id="question10" class="question">
+                <p>10. Which CSS property is used to change the font of an element?</p>
+                <button class="opt" onclick="Incorrect(this)">A. font-style</button><br>
+                <button class="opt" onclick="Correct(this)">B. font-family</button><br>
+                <button class="opt" onclick="Incorrect(this)">C. font-weight</button><br>
+                <button class="opt" onclick="Incorrect(this)">D. font-text</button>
+            </div>
+            <div id="question11" class="question">
+                <p>11. Inside which HTML element do we put the JavaScript?</p>
+                <button class="opt" onclick="Incorrect(this)">A. javascript</button><br>
+                <button class="opt" onclick="Inorrect(this)">B. js</button><br>
+                <button class="opt" onclick="Correct(this)">C. script</button><br>
+                <button class="opt" onclick="Incorrect(this)">D. code</button>
+            </div>
+            <div id="question12" class="question">
+                <p>12. How do you write "Hello World" in an alert box?</p>
+                <button class="opt" onclick="Correct(this)">A. alert("Hello World")</button><br>
+                <button class="opt" onclick="Incorrect(this)">B. msgBox("Hello World")</button><br>
+                <button class="opt" onclick="Incorrect(this)">C. alertBox("Hello World")</button><br>
+                <button class="opt" onclick="Incorrect(this)">D. msg("Hello World")</button>
+            </div>
+            <div id="question13" class="question">
+                <p>13. How do you create a function in JavaScript?</p>
+                <button class="opt" onclick="Incorrect(this)">A. function = myFunction()</button><br>
+                <button class="opt" onclick="Incorrect(this)">B. function:myFunction()</button><br>
+                <button class="opt" onclick="Correct(this)">C. function myFunction()</button><br>
+                <button class="opt" onclick="Incorrect(this)">D. createFunction myFunction()</button>
+            </div>
+            <div id="question14" class="question">
+                <p>14. How do you call a function named "myFunction"</p>
+                <button class="opt" onclick="Incorrect(this)">A. call myFunction()</button><br>
+                <button class="opt" onclick="Incorrect(this)">B. call function myFunction()</button><br>
+                <button class="opt" onclick="Correct(this)">C. myFunction()</button><br>
+                <button class="opt" onclick="Incorrect(this)">D. call myFunction</button>
+            </div>
+            <div id="question15" class="question">
+                <p>15. How to write an IF statement in JavaScript?</p>
+                <button class="opt" onclick="Incorrect(this)">A. if i == 5 then</button><br>
+                <button class="opt" onclick="Correct(this)">B. if (i == 5)</button><br>
+                <button class="opt" onclick="Incorrect(this)">C. if i = 5</button><br>
+                <button class="opt" onclick="Incorrect(this)">D. if i == 5</button>
+            </div>
+        </div>
+        <button id="submit-button" onclick="submit()">Submit</button>
+        <button id="next-button" onclick="next()">Next</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
